@@ -23,7 +23,7 @@ app.get('/api/repos/:language', async (req, res) => {
   const { language } = req.params;
   try {
     const encodedLanguage = encodeURIComponent(language);
-    const response = await axios.get(`https://api.github.com/search/repositories?q=language:${encodedLanguage}&sort=stars&order=desc&per_page=5`, {
+    const response = await axios.get(`https://api.github.com/search/repositories?q=language:${encodedLanguage}+stars:%3E=1600&sort=stars&order=desc&per_page=5&page=1`, {
       headers: {
         Authorization: `token ${GITHUB_API_KEY}`,
       },
