@@ -1,0 +1,124 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #262626;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #023e8a;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.grid-item h2 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.grid-item p {
+  margin: 0 0 .5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.grid-item a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.grid-item a:hover {
+  text-decoration: underline;
+}
+
+.grid-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e9e9e9;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: .25rem .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.tag:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
